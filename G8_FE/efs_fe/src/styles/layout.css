@@ -1,0 +1,18 @@
+/* Layout styles to replace div-based flexbox */
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Flex container for sidebar and main content */
+.app-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}

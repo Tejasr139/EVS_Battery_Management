@@ -1,0 +1,54 @@
+/* Battery Details Screen Styles */
+.status-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.status-card:hover {
+    transform: translateY(-3px);
+}
+
+.status-icon span {
+    font-size: 2rem;
+}
+
+.control-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.control-card .card-header {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.control-btn {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.control-btn:hover {
+    transform: translateY(-2px);
+}
+
+.chart-card, .readings-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card .card-header {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.readings-card .card-header {
+    background: linear-gradient(135deg, #17a2b8, #6f42c1);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}

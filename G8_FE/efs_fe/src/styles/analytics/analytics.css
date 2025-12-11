@@ -1,0 +1,28 @@
+/* Analytics Screen Styles */
+.analytics-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.analytics-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.analytics-card .card-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+
+.analytics-card .card-body {
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .analytics-card .card-body {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,81 @@
+/* Responsive Design for Login/Register Pages */
+
+/* Mobile First Approach */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .form-control-lg, .form-select-lg {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .rounded-circle {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .rounded-circle span {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 768px) {
+  .card-body {
+    padding: 2rem !important;
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .card-body {
+    padding: 3rem !important;
+  }
+}
+
+/* Form Input Focus Effects */
+.form-control:focus, .form-select:focus {
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+}
+
+/* Button Hover Effects */
+.btn:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Card Responsive Adjustments */
+.card {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Ensure proper spacing on all devices */
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Fix for very small screens */
+@media (max-width: 320px) {
+  .card-body {
+    padding: 1rem !important;
+  }
+  
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}

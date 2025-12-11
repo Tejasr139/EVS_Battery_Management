@@ -1,0 +1,93 @@
+/* Register Screen Styles */
+.auth-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    padding: 1rem;
+}
+
+.auth-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-card-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.register-card {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
+}
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    box-shadow: 0 8px 32px rgba(255, 154, 158, 0.3);
+    border-radius: 50%;
+}
+
+.circle-icon span {
+    font-size: 2rem;
+    color: white;
+}
+
+.page-title {
+    color: #d63384;
+}
+
+.register-btn {
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 154, 158, 0.4);
+    color: white;
+    transition: 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+}
+
+.register-link {
+    color: #d63384;
+}
+
+.form-control-lg, .form-select-lg {
+    border-radius: 10px;
+    border: 2px solid #f8d7da;
+    transition: 0.3s ease;
+}
+
+.form-control-lg:focus, .form-select-lg:focus {
+    border-color: #ff9a9e !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 154, 158, 0.25) !important;
+}
+
+@media (max-width: 576px) {
+    .register-card {
+        margin: 0.5rem;
+    }
+    
+    .circle-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .circle-icon span {
+        font-size: 1.6rem;
+    }
+    
+    .page-title {
+        font-size: 1.6rem;
+    }
+}
