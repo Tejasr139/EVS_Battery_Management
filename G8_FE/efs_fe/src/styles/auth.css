@@ -1,0 +1,169 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+}
+
+.auth-form {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Mobile (480px and up) */
+@media (min-width: 480px) {
+  .auth-container {
+    padding: 1rem;
+  }
+  .auth-form {
+    padding: 1.5rem;
+    max-width: 400px;
+  }
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .auth-form {
+    padding: 2rem;
+    max-width: 450px;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .auth-form {
+    padding: 2.5rem;
+    max-width: 500px;
+  }
+}
+
+/* Large Desktop (1440px and up) */
+@media (min-width: 1440px) {
+  .auth-form {
+    padding: 3rem;
+    max-width: 550px;
+  }
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 479px) {
+  .auth-form h2 {
+    font-size: 1.3rem;
+  }
+  .form-group input,
+  .form-group select,
+  .auth-btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile (480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .auth-form h2 {
+    font-size: 1.5rem;
+  }
+  .form-group input,
+  .form-group select,
+  .auth-btn {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+/* Tablet (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .auth-form h2 {
+    font-size: 1.8rem;
+  }
+  .form-group input,
+  .form-group select,
+  .auth-btn {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .auth-form h2 {
+    font-size: 2rem;
+  }
+  .form-group input,
+  .form-group select,
+  .auth-btn {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.auth-btn:hover {
+  background-color: #0056b3;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+}
+
+.auth-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}

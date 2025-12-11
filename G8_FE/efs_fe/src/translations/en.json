@@ -1,0 +1,45 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "batteryData": "Battery Data",
+    "analytics": "Analytics",
+    "userManagement": "User Management",
+    "systemSettings": "System Settings",
+    "systemLogs": "System Logs",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phoneNumber": "Phone Number",
+    "gender": "Gender",
+    "createAccount": "Create Account",
+    "signIn": "Sign In",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "joinToday": "Join us today and start your journey"
+  },
+  "dashboard": {
+    "title": "Battery Management Dashboard",
+    "subtitle": "Monitor your battery systems in real-time",
+    "excellent": "Excellent",
+    "good": "Good",
+    "low": "Low",
+    "lastUpdated": "Last updated"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "language": "Language"
+  }
+}

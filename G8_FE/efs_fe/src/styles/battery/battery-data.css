@@ -1,0 +1,52 @@
+/* Battery Data Screen Styles */
+.controls-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls-card .card-header {
+    background: linear-gradient(135deg, #6f42c1, #e83e8c);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.fetch-btn {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.fetch-btn:hover {
+    transform: translateY(-2px);
+}
+
+.data-table-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.data-table-card .card-header {
+    background: linear-gradient(135deg, #fd7e14, #e83e8c);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.data-table {
+    margin-bottom: 0;
+}
+
+.data-table th {
+    border-top: none;
+    font-weight: 600;
+}
+
+.data-table td {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .data-table {
+        font-size: 0.9rem;
+    }
+}

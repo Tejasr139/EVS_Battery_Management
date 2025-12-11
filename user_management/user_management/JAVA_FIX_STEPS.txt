@@ -1,0 +1,40 @@
+JAVA VERSION FIX STEPS
+======================
+
+PROBLEM: Maven is using Java 8 but your project needs Java 17
+
+SOLUTION STEPS:
+
+1. SET JAVA_HOME PERMANENTLY:
+   - Open System Properties (Windows + R, type "sysdm.cpl")
+   - Go to Advanced tab → Environment Variables
+   - Under System Variables, find JAVA_HOME
+   - Change value from: C:\Program Files\Android\jdk\jdk-8.0.302.8-hotspot\jdk8u302-b08
+   - Change value to: C:\Program Files\Java\jdk-17.0.11+9
+   - Click OK to save
+
+2. UPDATE PATH VARIABLE:
+   - In same Environment Variables window
+   - Find PATH in System Variables
+   - Edit PATH and move %JAVA_HOME%\bin to the TOP of the list
+   - Click OK to save
+
+3. RESTART COMMAND PROMPT:
+   - Close all command prompt/PowerShell windows
+   - Open new PowerShell window
+
+4. VERIFY JAVA VERSION:
+   - Run: java -version
+   - Should show: openjdk version "17.0.11"
+
+5. BUILD PROJECT:
+   - cd C:\Users\40041416\Downloads\user_management\user_management
+   - mvn clean install
+
+ALTERNATIVE (TEMPORARY FIX):
+Run these commands in PowerShell:
+$env:JAVA_HOME="C:\Program Files\Java\jdk-17.0.11+9"
+$env:PATH="$env:JAVA_HOME\bin;$env:PATH"
+mvn clean install
+
+Your project will then compile successfully with Java 17.

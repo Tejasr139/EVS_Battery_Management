@@ -1,0 +1,110 @@
+{"id":"59202","variant":"standard","title":"auth-fix.css Clean Fully Responsive"}
+/* RESET: Prevent global flex issues */
+body,
+#root {
+  display: block !important;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* PAGE WRAPPER - ALWAYS CENTERED */
+.auth-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #667eea);
+}
+
+/* Content wrapper */
+.auth-wrapper {
+  width: 100%;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login card container */
+.auth-card-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Actual card */
+.login-card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+}
+
+/* Icon styling */
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  border-radius: 50%;
+}
+
+.circle-icon span {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Button */
+.login-btn {
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Link */
+.login-link {
+  color: #667eea;
+}
+
+/* Inputs */
+.form-control-lg {
+  border-radius: 12px;
+  border: 2px solid #e3f2fd;
+  transition: 0.3s ease;
+}
+
+.form-control-lg:focus {
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 576px) {
+  .login-card {
+    margin: 0.5rem;
+  }
+
+  .circle-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .circle-icon span {
+    font-size: 1.6rem;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+  }
+}

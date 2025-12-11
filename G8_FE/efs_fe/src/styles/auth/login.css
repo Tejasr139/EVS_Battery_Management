@@ -1,0 +1,93 @@
+/* Login Screen Styles */
+.auth-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #667eea);
+}
+
+.auth-wrapper {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-card-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-card {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(10px);
+}
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+    border-radius: 50%;
+}
+
+.circle-icon span {
+    font-size: 2rem;
+    color: white;
+}
+
+.page-title {
+    color: #1e3c72;
+}
+
+.login-btn {
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    color: white;
+    transition: 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+}
+
+.login-link {
+    color: #667eea;
+}
+
+.form-control-lg {
+    border-radius: 12px;
+    border: 2px solid #e3f2fd;
+    transition: 0.3s ease;
+}
+
+.form-control-lg:focus {
+    border-color: #667eea !important;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25) !important;
+}
+
+@media (max-width: 576px) {
+    .login-card {
+        margin: 0.5rem;
+    }
+    
+    .circle-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .circle-icon span {
+        font-size: 1.6rem;
+    }
+    
+    .page-title {
+        font-size: 1.6rem;
+    }
+}
